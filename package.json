@@ -1,25 +1,21 @@
 {
-  "type": "module",
-  "name": "rest-express",
+  "name": "mobilefirstreact",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:server": "NODE_ENV=development tsx server/index.ts",
-    "dev:client": "cd client && vite",
-    "dev": "npm run dev:server",
-    "client": "npm run dev:client"
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm install && npm run build",
+    "start": "node server/index.ts"
   },
   "dependencies": {
     "express": "^4.19.2",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5"
+    "tsx": "^4.7.0"
   },
   "devDependencies": {
-    "tsx": "^4.19.1",
-    "typescript": "^5.5.4"
-  },
-  "engines": {
-    "node": ">=20"
+    "@types/node": "^22.8.1",
+    "typescript": "^5.4.5"
   }
 }
