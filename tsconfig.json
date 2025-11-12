@@ -8,7 +8,11 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node", "vite/client"],
+    "resolveJsonModule": true,
+    "outDir": "dist"
   },
-  "include": ["client/src", "server/**/*.ts", "shared/**/*.ts"]
+  "include": ["client/src", "server/**/*.ts", "shared/**/*.ts"],
+  "exclude": ["node_modules"]
 }
