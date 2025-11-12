@@ -3,13 +3,12 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Node",
-    "lib": ["ESNext", "DOM"],
-    "types": ["node", "vite/client"],
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "strict": true,
-    "resolveJsonModule": true,
-    "outDir": "dist"
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["server", "client/src"]
+  "include": ["client/src", "server/**/*.ts", "shared/**/*.ts"]
 }
