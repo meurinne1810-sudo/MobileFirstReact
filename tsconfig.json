@@ -1,18 +1,13 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "jsx": "react-jsx",
-    "allowJs": true,
-    "strict": true,
+    "module": "CommonJS",
+    "rootDir": "./",
+    "outDir": "./dist",
     "esModuleInterop": true,
+    "strict": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "types": ["node", "vite/client"],
-    "resolveJsonModule": true,
-    "outDir": "dist"
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["client/src", "server/**/*.ts", "shared/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["server/**/*.ts", "shared/**/*.ts"]
 }

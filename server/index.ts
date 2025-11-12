@@ -4,7 +4,11 @@ import { fileURLToPath } from "url";
 import cors from "cors";
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://<https://mobilefirstreact-1.onrender.com>.onrender.com",
+  }),
+);
 app.use(express.json());
 
 // ⚙️ Necesario para que __dirname funcione en ESModules
